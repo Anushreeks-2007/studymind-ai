@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyMind AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">✦</div>
+        <div>
+          <h1>StudyMind</h1>
+          <span>AI Academic Assistant</span>
+        </div>
+      </div>
+
+      <button class="new-chat" id="newChatBtn">＋ New chat</button>
+
+      <div class="history">
+        <p class="section-title">Recent chats</p>
+        <button class="history-item active">Java Type Casting</button>
+        <button class="history-item">Machine Learning Basics</button>
+        <button class="history-item">Operating Systems</button>
+      </div>
+
+      <div class="sidebar-bottom">
+        <button class="side-link">⚙ Settings</button>
+        <div class="profile">
+          <div class="avatar">A</div>
+          <div>
+            <strong>Student</strong>
+            <span>Learning mode</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="chat-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenuBtn">☰</button>
+        <div>
+          <strong>StudyMind AI</strong>
+          <span>• Online</span>
+        </div>
+        <button class="top-action" title="Clear conversation" id="clearBtn">⌫</button>
+      </header>
+
+      <section class="messages" id="messages">
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon">✦</div>
+          <h2>What are you learning today?</h2>
+          <p>Ask questions, explain concepts, or get help preparing for your next exam.</p>
+
+          <div class="suggestions">
+            <button data-prompt="Explain Java inheritance in simple terms">Explain a concept</button>
+            <button data-prompt="Give me a 5-question Python quiz">Create a quiz</button>
+            <button data-prompt="Help me make a study plan for exams">Make a study plan</button>
+            <button data-prompt="Explain this topic like I am a beginner">Simplify a topic</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="input-wrapper">
+        <div class="input-box">
+          <button class="attach-btn" title="Attach document">＋</button>
+          <textarea id="messageInput" rows="1" placeholder="Message StudyMind AI..."></textarea>
+          <button class="send-btn" id="sendBtn" title="Send">➤</button>
+        </div>
+        <p class="disclaimer">StudyMind AI can make mistakes. Verify important information.</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
